@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>Python-Simplified/CosAcademy</title>
+        <link rel="icon" href="cosgold.png" />
+    </head>
+    <body>
+        <nav id="navbar">
+            <header class="heading">Python Documentation</header>
+            <a href="#Introduction_To_Python" class="nav-link">Introduction To Python</a>
+            <a href="#History_Of_Python" class="nav-link">History Of Python</a>
+            <a href="#Syntax_and_Semantics" class="nav-link">Syntax and Semantics</a>
+            <a href="#Programming_Examples" class="nav-link">Programming Examples</a>
+            <a href="#Libraries" class="nav-link">Libraries</a>
+            <a href="#Development_Environment" class="nav-link">Development Environment</a>
+            <a href="#Reference" class="nav-link">Reference</a>
+        </nav>   
+        <main id="main-doc">
+            <section class="main-section" id="Introduction_To_Python">
+                <header>Introduction To Python</header>
+                <img id="py-logo" src="python.png"/>
+                <article>
+                    <p id="indent">Python is a high-level, interpreted, general-purpose programming language. Its design philosophy 
+                        emphasizes code readability with the use of significant indentation. Below is a simplified definition of 
+                        pyhton:
+                    </p>
+                      <ul>
+                            <li>Python is dynamically-typed.</li>
+                            <li>It is  garbage-collected.</li>
+                            <li>It supports multiple programming paradigms, including structured (particularly procedural), 
+                                object-oriented and functional programming</li>
+                            <li>It is often described as a "batteries included" language due to its comprehensive standard library</li>
+                        </ul>
+                </article>
+            </section>
+            <section class="main-section" id="History_Of_Python">
+                <header>History Of Python</header>
+                    <article>
+                        <p id="indent">
+                            Python was conceived in the late 1980s by <strong>Guido van Rossum</strong> at Centrum Wiskunde & 
+                            Informatica (CWI) in the Netherlands. He created it as a successor to the ABC programming language, 
+                            which was inspired by SETL, capable of exception handling and interfacing with the Amoeba operating system. 
+                            Python was first released in 1991 as Python 0.9.0. Python 2.0 was released on 16 October 2000, with many 
+                            major new features. Python 3.0, released on 3 December 2008, with many of its major features backported 
+                            to Python 2.6.x and 2.7.x. Releases of Python 3 include the <code>2to3</code> utility, which automates 
+                            the translation of Python 2 code to Python 3.
+                        </p>
+                    </article>
+            </section>
+            <section class="main-section" id="Syntax_and_Semantics">
+                <header>Syntax and Semantics</header>
+                    <article>
+                        <p id="indent">
+                            Python is meant to be an easily readable language. Its formatting is visually uncluttered and often uses 
+                            English keywords where other languages use punctuation. Unlike many other languages, it does not use curly
+                            brackets to delimit blocks, and semicolons after statements are allowed but rarely used. It has fewer 
+                            syntactic exceptions and special cases than C or Pascal.
+                        </p>
+                        <p class="sub-heading">Statements and Control Flow</p>
+                        <ul>
+                            <li>The assignment statement, using a single equals sign <code>=</code></li>
+                            <li>The <code>if</code> statement, which conditionally executes a block of code, along with 
+                                <code>else</code> and <code>elif</code> (a contraction of else-if)</li>
+                            <li>The <code>for</code> statement, which iterates over an iterable object, capturing each element to a 
+                                local variable for use by the attached block</li>
+                            <li>The <code>while</code> statement, which executes a block of code as long as its condition is true</li>
+                            <li>The <code>break</code> statement, which exits a loop</li>
+                            <li>The <code>def</code> statement, which defines a function or method</li>
+                            <li>The <code>continue</code> statement, which skips the current iteration and continues with the next</li>
+                            <li>The <code>import</code> statement, used to import modules whose functions or variables can be used in 
+                                the current program</li>
+                            <li>Various signs and symbols are also used in python, such as: +, -, !, %, ( ), >, <, <=, >=, ==, " ", /
+                            </li>
+                        </ul>
+                    </article>
+            </section>
+            <section class="main-section" id="Programming_Examples">
+                <header>Programming Examples</header>
+                <article>
+                    <h4>Below are some basic codes written in python:</h4>
+                    <p><u>Storing a string in a variable and declaring it:</u></p>
+                        <code id="only">
+                            <ol>
+                                <li>name = Emeka</li>
+                                <li>print(name)</li>
+                                <li><em id="tm">output >>> Emeka</em></li> 
+                                <li></em><em id="gn">#The hash symbol is used to write comments in python....comments cannot be 
+                                    executed</em>
+                            </ol>
+                        </code>
+                    <p><u>Program to solve for factorial 5:</u></p>
+                        <code id="only">
+                            <ol>
+                                <li><em id="bl">def</em> factorial(num):</li> 
+                                <li>&nbsp fact = 1</li> 
+                                <li>&nbsp <em id="bl">while</em> num > 0:</li> 
+                                <li>&nbsp &nbsp fact = fact * num</li>
+                                <li>&nbsp &nbsp num = num - 1</li> 
+                                <li>&nbsp <em id="bl">return</em> fact</li> 
+                                <li>print(factorial(5))</li> 
+                                <li><em id="tm">output >>> 120</em></li>
+                            </ol>
+                        </code>
+                </article>
+            </section>
+            <section class="main-section" id="Libraries">
+                <header>Libraries</header>
+                <article>
+                    <p id="indent">
+                        Python's large standard library provides tools suited to many tasks, and is commonly cited as one 
+                        of its greatest strengths. For Internet-facing applications, many standard formats and protocols such as MIME
+                        and HTTP are supported. It includes modules for creating graphical user interfaces, connecting to relational
+                        databases, generating pseudorandom numbers, arithmetic with arbitrary-precision decimals, manipulating
+                        regular expressions, and unit testing. Some parts of the standard library are covered by specifications—
+                        for example, the Web Server Gateway Interface (WSGI) implementation wsgiref follows PEP 333—but most are
+                        specified by their code, internal documentation, and test suites. However, because most of the standard
+                        library is cross-platform Python code, only a few modules need altering or rewriting for variant
+                        implementations. As of June 2022, the Python Package Index (PyPI), the official repository for third-party
+                        Python software, contains over 380,000 packages with a wide range of functionality, including:
+                    </p>
+                    <ul>
+                        <li>Automation</li>
+                        <li>Data analytics</li>
+                        <li>Databases</li>
+                        <li>Documentation</li>
+                        <li>Graphical user interfaces</li>
+                        <li>Image processing</li>
+                        <li>Machine learning</li>
+                        <li>Mobile apps</li>
+                        <li>Multimedia</li>
+                        <li>Computer networking</li>
+                        <li>Scientific computing</li>
+                        <li>System administration</li>
+                        <li>Test frameworks</li>
+                        <li>Text processing</li>
+                        <li>Web frameworks</li>
+                        <li>Web scraping</li>
+                </article>
+            </section>
+            <section class="main-section" id="Development_Environment">
+                <header>Development Environment</header>
+                <article>
+                    <p id="indent">
+                        Most Python implementations (including CPython) include a read-eval-print loop (REPL), permitting them to 
+                        function as a command line interpreter for which users enter statements sequentially and receive results 
+                        immediately. Python also comes with an Integrated development environment (IDE) called IDLE, which is more 
+                        beginner-oriented. Other shells, including IDLE and IPython, add further abilities such as improved 
+                        auto-completion, session state retention and syntax highlighting. As well as standard desktop integrated 
+                        development environments, there are Web browser-based IDEs, including SageMath, for developing science- 
+                        and math-related programs; PythonAnywhere, a browser-based IDE and hosting environment; and Canopy IDE, 
+                        a commercial IDE emphasizing scientific computing.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <p id="indent">
+                    Majority of the documents shown on this page was taken from it's wikipedia page.
+                    Click on this link  <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" 
+                    id="wiki">Python/Wikipedia</a>to read the full python documentation
+                </p>
+            </section>
+        </main>    
+    </body>
+</html>

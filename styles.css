@@ -1,0 +1,147 @@
+body{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: burlywood;
+    line-height: 2.0;
+}
+
+#indent{
+    text-indent: 40px;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+}
+
+.nav-link{
+    display: block;
+    border: 5px solid #808080;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin-top: 2px;
+    padding: 15px;
+    line-height: normal;
+}
+
+.nav-link:hover{
+    background-color: bisque;
+}
+
+ul li{
+    list-style-type: square;
+}
+
+nav header{
+    margin-bottom: 1.4em;
+    margin-top: 10px;
+}
+
+#main-doc{
+    position: absolute;
+    top: 0;
+    margin-left: 344px;
+}
+
+#logo{
+    height: 1.3em;
+    margin-right: 5px;
+    padding-left: 0;
+}
+
+header{
+    font-size: 1.4em;
+    font-weight: bolder;
+    text-align: center;
+    line-height: normal;
+}
+
+#py-logo{
+    display: block;
+    margin: 0 auto;
+}
+
+.main-section{
+    border: 4px ridge #000;
+    padding: 30px;
+}
+
+
+code{
+    background-color: #c2c0c0;
+    border-radius: 2px;
+    padding: 1px;
+}
+
+#only{
+    background-color: bisque;
+    border-radius: 10px;
+    display: block;
+    padding-left: 10px;
+}
+
+em{
+    color: #000;
+}
+
+#tm{
+    color: #808;
+}
+
+#gn{
+    color: green;
+}
+
+#bl{
+    color: #0000ff;
+}
+
+.sub-heading{
+    font-weight: bolder;
+}
+
+#wiki{
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 4px;
+    background-color: #fff;
+}
+
+#wiki:hover{
+    color: #fff;
+    background-color: #000;
+    border-color: #fff;
+}
+
+@media (max-width: 768px) {
+    #navbar{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 30%;
+        overflow-y: scroll;
+    }
+}
+@media (max-width: 768px) {
+    #main-doc{
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        margin-left: -8px;
+    }
+    #indent{
+        text-indent: 20px;
+    }
+}
+
+@media (max-width: 480){
+    code{
+        overflow-x: scroll;
+    }
+}
