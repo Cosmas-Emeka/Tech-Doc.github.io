@@ -140,8 +140,11 @@ em{
     }
 }
 
-@media (max-width: 480){
+@media (max-width: 481px){
     code{
         overflow-x: scroll;
+    }
+    *{
+        font-size: small;
     }
 }
